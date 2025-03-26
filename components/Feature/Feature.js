@@ -78,17 +78,17 @@ function Feature() {
                 >
                   <div>
                     <Title align={isMobile ? 'center' : 'left'}>
-                      {t('saas-landing.feature_title1')}
+                      {t('feature_title1')}
                       &nbsp;
                       <strong>
-                        {t('saas-landing.feature_titlestrong1')}
+                        {t('feature_titlestrong1')}
                       </strong>
                     </Title>
                     <Typography display="block" component="h6" className={text.subtitle2} align={isMobile ? 'center' : 'left'}>
-                      {t('saas-landing.feature_desc1')}
+                      {t('feature_desc1')}
                     </Typography>
                     <Button variant="contained" color="primary" size="large" className={classes.btn}>
-                      {t('saas-landing.see_detail')}
+                      {t('see_detail')}
                     </Button>
                   </div>
                 </ScrollAnimation>
@@ -107,18 +107,18 @@ function Feature() {
                 >
                   <div>
                     <Title align={isMobile ? 'center' : 'right'}>
-                      {t('saas-landing.feature_title1')}
+                      {t('feature_title2')}
                       &nbsp;
                       <strong>
-                        {t('saas-landing.feature_titlestrong2')}
+                        {t('feature_titlestrong2')}
                       </strong>
                     </Title>
                     <Typography display="block" component="h6" className={text.subtitle2} align={isMobile ? 'center' : 'right'}>
-                      {t('saas-landing.feature_desc2')}
+                      {t('feature_desc2')}
                     </Typography>
                     <div className={isMobile ? align.textCenter : align.textRight}>
                       <Button variant="contained" color="primary" size="large" className={classes.btn}>
-                        {t('saas-landing.see_detail')}
+                        {t('see_detail')}
                       </Button>
                     </div>
                   </div>
@@ -151,10 +151,10 @@ function Feature() {
           </div>
           <div className={cx(classes.item, classes.last)}>
             <Title align="center">
-              {t('saas-landing.feature_title3')}
+              {t('feature_title3')}
               &nbsp;
               <strong>
-                {t('saas-landing.feature_titlestrong3')}
+                {t('feature_titlestrong3')}
               </strong>
             </Title>
             <div className={classes.tab}>
@@ -176,7 +176,7 @@ function Feature() {
                     {value === 0 && (
                       <section>
                         <Typography component="h6" display="block" align="center" className={text.subtitle2}>
-                          {t('saas-landing.feature_desc3')}
+                          {t('feature_desc3')}
                         </Typography>
                         <div className={classes.illustrationCenter}>
                           <figure className={cx(classes.figure, classes.screen)}>
@@ -188,7 +188,7 @@ function Feature() {
                     {value === 1 && (
                       <section>
                         <Typography component="h6" display="block" align="center" className={text.subtitle2}>
-                          {t('saas-landing.feature_desc3')}
+                          {t('feature_desc3')}
                         </Typography>
                         <div className={classes.illustrationCenter}>
                           <figure className={cx(classes.figure, classes.screen)}>
@@ -200,7 +200,7 @@ function Feature() {
                     {value === 2 && (
                       <section>
                         <Typography component="h6" display="block" align="center" className={text.subtitle2}>
-                          {t('saas-landing.feature_desc3')}
+                          {t('feature_desc3')}
                         </Typography>
                         <div className={classes.illustrationCenter}>
                           <figure className={cx(classes.figure, classes.screen)}>

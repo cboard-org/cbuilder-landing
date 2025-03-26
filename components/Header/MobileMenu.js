@@ -33,7 +33,7 @@ function MobileMenu(props) {
               key={index.toString()}
               style={{ animationDuration: index * 0.15 + 's' }}
             >
-              <ListItemText primary={t('saas-landing.header_' + item)} className={classes.menuList} />
+              <ListItemText primary={t('header_' + item)} className={classes.menuList} />
             </ListItem>
           ))}
           <ListItem
@@ -42,7 +42,7 @@ function MobileMenu(props) {
             href={curLang + routeLink.saas.contact}
             style={{ animationDuration: navMenu.length * 0.15 + 's' }}
           >
-            <ListItemText primary={t('saas-landing.header_contact')} className={classes.menuList} />
+            <ListItemText primary={t('header_contact')} className={classes.menuList} />
           </ListItem>
           <Divider className={classes.dividerSidebar} />
           {['login', 'register'].map((item, index) => (
@@ -53,7 +53,7 @@ function MobileMenu(props) {
               key={index.toString()}
               style={{ animationDuration: navMenu.length * 0.15 + 's' }}
             >
-              <ListItemText primary={t('saas-landing.header_' + item)} className={classes.menuList} />
+              <ListItemText primary={t('header_' + item)} className={classes.menuList} />
             </ListItem>
           ))}
         </List>

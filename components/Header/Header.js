@@ -9,7 +9,7 @@ import { useTheme } from '@mui/material/styles';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { useTranslation } from 'next-i18next';
-import logo from 'public/images/saas-logo.svg';
+import logo from 'public/images/cbuilder-logo.gif';
 import brand from 'public/text/brand';
 import routeLink from 'public/text/link';
 import Link from '../Link';
@@ -105,12 +105,10 @@ function Header(props) {
                 {invert ? (
                   <Link href={routeLink.saas.home}>
                     <img src={logo} alt="logo" />
-                    {!isTablet && brand.saas.name}
                   </Link>
                 ) : (
                   <AnchorLink href="#home">
                     <img src={logo} alt="logo" />
-                    {!isTablet && brand.saas.name}
                   </AnchorLink>
                 )}
               </div>
@@ -124,18 +122,18 @@ function Header(props) {
                       {invert ? (
                         // eslint-disable-next-line
                         <Button component={Link} href={'/' + item.url}>
-                          {t('saas-landing.header_' + item.name)}
+                          {t('header_' + item.name)}
                         </Button>
                       ) : (
                         <Button component={LinkBtn} offset={item.offset || 0} href={item.url}>
-                          {t('saas-landing.header_' + item.name)}
+                          {t('header_' + item.name)}
                         </Button>
                       )}
                     </li>
                   ))}
                   <li>
                     <Button component={Link} href={routeLink.saas.contact}>
-                      {t('saas-landing.header_contact')}
+                      {t('header_contact')}
                     </Button>
                   </li>
                 </Scrollspy>
@@ -144,11 +142,8 @@ function Header(props) {
             <nav className={classes.navMenu}>
               {!isMobile && (
                 <Fragment>
-                  <Button component={Link} href={routeLink.saas.login} className={classes.textBtn}>
-                    {t('saas-landing.header_login')}
-                  </Button>
                   <Button component={Link} href={routeLink.saas.register} variant="contained" color="secondary" className={classes.button}>
-                    {t('saas-landing.header_register')}
+                  {t('getstarted')}
                   </Button>
                 </Fragment>
               )}

@@ -59,12 +59,12 @@ function PricingPlan() {
         <div className={classes.item}>
           <Title align="center">
             <strong>
-              {t('saas-landing.pricing_title')}
+              {t('pricing_title')}
             </strong>
           </Title>
         </div>
         <Typography className={cx(classes.subtitle, text.subtitle2)} display="block" align="center">
-          {t('saas-landing.pricing_subtitle')}
+          {t('pricing_subtitle')}
         </Typography>
         <div className={classes.pricingWrap}>
           <ScrollAnimation

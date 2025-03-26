@@ -97,7 +97,7 @@ function Banner() {
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogTitle id="alert-dialog-slide-title">
-          {t('saas-landing.banner_title')}
+          {t('banner_title')}
           <IconButton onClick={handleClose} className={classes.closeBtn} size="large">
             <CloseIcon className={classes.icon} />
           </IconButton>
@@ -128,21 +128,21 @@ function Banner() {
         <div className={classes.sliderWrap}>
           <div className={classes.text}>
             <Typography variant="h3" className={text.title}>
-              {t('saas-landing.banner_title')}
+              {t('banner_title')}
               &nbsp;
               <strong>
-                {t('saas-landing.banner_titlestrong')}
+                {t('banner_titlestrong')}
               </strong>
             </Typography>
             <Typography component="p" className={text.subtitle}>
-              {t('saas-landing.banner_subtitle')}
+              {t('banner_subtitle')}
             </Typography>
             <div className={classes.btnArea}>
               <ButtonBase className={classes.playBtn} onClick={handleClickOpen}>
                 <span className={classes.icon}>
                   <i className="ion-ios-play-outline" />
                 </span>
-                {t('saas-landing.banner_watchvideo')}
+                {t('banner_watchvideo')}
               </ButtonBase>
               <Button
                 variant="contained"
@@ -150,7 +150,7 @@ function Banner() {
                 size="large"
                 href="/login"
               >
-                {t('saas-landing.getstarted')}
+                {t('getstarted')}
               </Button>
             </div>
           </div>

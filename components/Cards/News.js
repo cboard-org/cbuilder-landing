@@ -22,12 +22,12 @@ function News(props) {
       <div className={classes.desc}>
         <div className={classes.text}>
           <Typography variant="caption" className={classes.type}>
-            {t('saas-landing.' + type)}
+            {t('' + type)}
           </Typography>
           <Typography display="block" component="p">{text}</Typography>
         </div>
         <Button size="small" className={classes.btn}>
-          {t('saas-landing.news_readmore')}
+          {t('news_readmore')}
         </Button>
       </div>
     </div>

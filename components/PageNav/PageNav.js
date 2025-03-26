@@ -59,7 +59,7 @@ function PageNav() {
               data-id={item.id}
             >
               <Tooltip
-                title={t('saas-landing.header_' + item.name)}
+                title={t('header_' + item.name)}
                 placement="left"
                 classes={{
                   tooltip: classes.tooltip

@@ -36,7 +36,7 @@ const imgAPI = {
     'https://via.placeholder.com/1000x680/b44fd4/FFFFFF',
     'https://via.placeholder.com/1000x680/00a7e8/FFFFFF',
     'https://via.placeholder.com/1000x680/e91e63/FFFFFF',
-    '/images/saas/desktop_illustration.png'
+    '/images/saas/desktop_illustration.gif',
   ]
 };
 

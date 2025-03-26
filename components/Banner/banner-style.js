@@ -136,13 +136,14 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
     }
   },
   illustration: {
+    //boxShadow: theme.shadows[24],
     [theme.breakpoints.down('md')]: {
       display: 'none'
     },
     '& img': {
       display: 'block',
       [theme.breakpoints.up('md')]: {
-        maxWidth: 400,
+        maxWidth: 600,
       },
       [theme.breakpoints.up('lg')]: {
         maxWidth: 480,

@@ -1,6 +1,6 @@
 module.exports = {
   saas: {
-    name: 'Software',
+    name: 'Cbuilder',
     desc: 'Luxiren Saas - React Single Landing Page Template',
     prefix: 'luxiren',
     footerText: 'Luxiren Theme 2021',

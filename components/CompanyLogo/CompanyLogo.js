@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import useStyles from './logo-style';
+import { Grid, Stack } from '@mui/material';
 
 const logos = [
-  '/images/logos/architect.png',
-  '/images/logos/cloud.png',
-  '/images/logos/coin.png',
-  '/images/logos/mobile.png',
-  '/images/logos/profile.png',
-  '/images/logos/saas.png',
+  '/images/logos/cboard-logo.png',
 ];
 
 function CompanyLogo() {
   const { classes } = useStyles();
   return (
+    <Fragment>
+      <Stack spacing={0} className={classes.stack}>
+      <Typography variant="h5" className={classes.title}>
+        Powered by
+      </Typography>
     <Container fixed>
       <div className={classes.root}>
         {logos.map((logo, index) => (
@@ -21,6 +23,8 @@ function CompanyLogo() {
         ))}
       </div>
     </Container>
+    </Stack>
+    </Fragment>
   );
 }
 

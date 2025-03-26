@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import CountUp from 'react-countup';
 import ScrollAnimation from 'react-scroll-animation-wrapper';
-import ArrowIcon from '@mui/icons-material/Reply';
-import UsersIcon from '@mui/icons-material/SupervisorAccount';
-import LayerIcon from '@mui/icons-material/Layers';
+import LanguageIcon from '@mui/icons-material/Language';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import EmojiSymbolsIcon from '@mui/icons-material/EmojiSymbols';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
@@ -49,13 +49,13 @@ function Counter() {
               <div className={classes.counterItem}>
                 <div className={classes.text}>
                   <Typography variant="h3" className={text.title}>
-                    {countup(12, play)}
+                    {countup(1, play)}
                     &nbsp;
-                    {t('saas-landing.counter_month')}
+                    {t('counter_month')}
                   </Typography>
                   <Typography component="p" className={text.subtitle}>
-                    <ArrowIcon />
-                    {t('saas-landing.counter_free')}
+                    <CalendarMonthIcon />
+                    {t('counter_free')}
                   </Typography>
                 </div>
               </div>
@@ -65,27 +65,25 @@ function Counter() {
                 <div className={classes.text}>
                   <Typography variant="h3" className={text.title}>
                     +
-                    {countup(80, play)}
-                    M
-                  </Typography>
-                  <Typography component="p" className={text.subtitle}>
-                    <UsersIcon />
-                    {t('saas-landing.counter_users')}
-                  </Typography>
-                </div>
-              </div>
-            </Grid>
-            <Grid md={4} item>
-              <div className={classes.counterItem}>
-                <div className={classes.text}>
-                  <Typography variant="h3" className={text.title}>
-                    +
-                    {countup(180, play)}
+                    {countup(20, play)}
                     K
                   </Typography>
                   <Typography component="p" className={text.subtitle}>
-                    <LayerIcon />
-                    {t('saas-landing.counter_providers')}
+                    <EmojiSymbolsIcon />
+                    {t('counter_users')}
+                  </Typography>
+                </div>
+              </div>
+            </Grid>
+            <Grid md={4} item>
+              <div className={classes.counterItem}>
+                <div className={classes.text}>
+                  <Typography variant="h3" className={text.title}>
+                    {countup(3, play)}
+                  </Typography>
+                  <Typography component="p" className={text.subtitle}>
+                    <LanguageIcon />
+                    {t('counter_providers')}
                   </Typography>
                 </div>
               </div>

@@ -13,72 +13,6 @@ import { useText, useHidden } from 'theme/common';
 import imgAPI from 'public/images/imgAPI';
 import useStyle from './testi-style';
 
-const testiContent = [
-  {
-    text: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
-    avatar: imgAPI.avatar[10],
-    name: 'John Doe',
-    title: 'Chief Digital Officer',
-    logo: '/images/logos/agency.png',
-  },
-  {
-    text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
-    avatar: imgAPI.avatar[1],
-    name: 'Jean Doe',
-    title: 'Chief Digital Officer',
-    logo: '/images/logos/architect.png',
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[2],
-    name: 'Jena Doe',
-    title: 'Graphic Designer',
-    logo: '/images/logos/cloud.png',
-  },
-  {
-    text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-    avatar: imgAPI.avatar[3],
-    name: 'Jovelin Doe',
-    title: 'Senior Graphic Designer',
-    logo: '/images/logos/starter.png',
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[4],
-    name: 'Jihan Doe',
-    title: 'CEO Software House',
-    logo: '/images/logos/coin.png',
-  },
-  {
-    text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
-    avatar: imgAPI.avatar[6],
-    name: 'Jovelin Doe',
-    title: 'Senior Graphic Designer',
-    logo: '/images/logos/fashion.png',
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[7],
-    name: 'John Doe',
-    title: 'Senior Graphic Designer',
-    logo: '/images/logos/mobile.png',
-  },
-  {
-    text: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
-    avatar: imgAPI.avatar[10],
-    name: 'John Doe',
-    title: 'Chief Digital Officer',
-    logo: '/images/logos/profile.png',
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[1],
-    name: 'Jean Doe',
-    title: 'Chief Digital Officer',
-    logo: '/images/logos/saas.png',
-  },
-];
-
 function Testimonials() {
   const slider = useRef(null);
   const { classes, cx } = useStyle();
@@ -89,6 +23,71 @@ function Testimonials() {
   const { t } = useTranslation('common');
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const testiContent = [
+    {
+      text: t('testi1'),
+      name: t('testi1Name'),
+      title: t('testi1Title'),
+      avatar: imgAPI.avatar[10],
+      logo: '/images/logos/agency.png',
+    },
+    {
+      text: t('testi2'),
+      name: t('testi2Name'),
+      title: t('testi2Title'),
+      avatar: imgAPI.avatar[1],
+      logo: '/images/logos/architect.png',
+    },
+    {
+      text: t('testi3'),
+      name: t('testi3Name'),
+      title: t('testi3Title'),
+      avatar: imgAPI.avatar[2],
+      logo: '/images/logos/cloud.png',
+    },
+    {
+      text: t('testi4'),
+      name: t('testi4Name'),
+      title: t('testi4Title'),
+      avatar: imgAPI.avatar[3],
+      logo: '/images/logos/starter.png',
+    },
+    {
+      text: t('testi5'),
+      name: t('testi5Name'),
+      title: t('testi5Title'),
+      avatar: imgAPI.avatar[4],
+      logo: '/images/logos/coin.png',
+    },
+    {
+      text: t('testi6'),
+      name: t('testi6Name'),
+      title: t('testi6Title'),
+      avatar: imgAPI.avatar[6],
+      logo: '/images/logos/fashion.png',
+    },
+    {
+      text: t('testi7'),
+      name: t('testi7Name'),
+      title: t('testi7Title'),
+      avatar: imgAPI.avatar[7],
+      logo: '/images/logos/mobile.png',
+    },
+    {
+      text: t('testi8'),
+      name: t('testi8Name'),
+      title: t('testi8Title'),
+      avatar: imgAPI.avatar[10],
+      logo: '/images/logos/profile.png',
+    },
+    {
+      text: t('testi9'),
+      name: t('testi9Name'),
+      title: t('testi9Title'),
+      avatar: imgAPI.avatar[1],
+      logo: '/images/logos/saas.png',
+    },
+  ];
 
   const settings = {
     dots: false,
@@ -126,10 +125,10 @@ function Testimonials() {
                 </div>
               )}
               <Typography variant="h3" align={isMobile ? 'center' : 'left'} className={cx(classes.title, text.title2)}>
-                {t('saas-landing.testi_title')}
+                {t('testi_title')}
                 <br />
                 <strong>
-                  {t('saas-landing.testi_titlestrong')}
+                  {t('testi_titlestrong')}
                 </strong>
               </Typography>
               <QuoteIcon className={classes.icon} />
