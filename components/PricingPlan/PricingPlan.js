@@ -10,42 +10,41 @@ import Title from '../Title';
 import PricingCard from '../Cards/Pricing';
 import useStyles from './pricing-plan-style';
 
-const feature = {
-  basic: [
-    'Nam sollicitudin dignissim',
-    'Cras convallis lacus',
-    'Quisque ut metus'
-  ],
-  best: [
-    'Nam sollicitudin dignissim',
-    'Cras convallis lacus',
-    'Quisque ut metus',
-    'Vivamus sit amet',
-    'Cras convallis lacus orci'
-  ],
-  pro: [
-    'Nam sollicitudin dignissim',
-    'Cras convallis lacus',
-    'Nulla lobortis nunc',
-    'Vitae scelerisque',
-    'Duis sed augue'
-  ],
-  enterprise: [
-    'Nam sollicitudin dignissim',
-    'Pellentesque ac bibendum ',
-    'Vestibulum consequat',
-    'Donec commodo',
-    'Duis tristique metus'
-  ],
-};
-
 function PricingPlan() {
   const { classes, cx } = useStyles();
   const { classes: text } = useText();
   const theme = useTheme();
   const { t } = useTranslation('common');
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
-
+  const feature = {
+    free: [
+      t('pricing_free_feature1'),
+      t('pricing_free_feature2'),
+      t('pricing_free_feature3'),
+    ],
+    basic: [
+      t('pricing_basic_feature1'),
+      t('pricing_basic_feature2'),
+      t('pricing_basic_feature3'),
+      t('pricing_basic_feature4'),
+      t('pricing_basic_feature5'),
+    ],
+    standard: [
+      t('pricing_standard_feature1'),
+      t('pricing_standard_feature2'),
+      t('pricing_standard_feature3'),
+      t('pricing_standard_feature4'),
+      t('pricing_standard_feature5'),
+    ],
+    pro: [
+      t('pricing_pro_feature1'),
+      t('pricing_pro_feature2'),
+      t('pricing_pro_feature3'),
+      t('pricing_pro_feature4'),
+      t('pricing_pro_feature5'),
+    ],
+  };
+  
   return (
     <div className={classes.root}>
       <div className={classes.decoration}>
@@ -76,10 +75,10 @@ function PricingPlan() {
           >
             <div className={classes.item}>
               <PricingCard
-                title="Basic"
+                title={t('pricing_free_title')}
                 price={0}
-                featureList={feature.basic}
-                desc="Interdum et malesuada fames ac ante ipsum primis in faucibus. "
+                featureList={feature.free}
+                desc={t('pricing_free_desc')}
                 type="basic"
               />
             </div>
@@ -94,11 +93,10 @@ function PricingPlan() {
           >
             <div className={classes.item}>
               <PricingCard
-                title="Best Value"
-                price={24}
-                featureList={feature.best}
-                desc="Interdum et malesuada fames ac ante ipsum primis in faucibus. "
-                type="value"
+                title={t('pricing_basic_title')}
+                price={10}
+                featureList={feature.basic}
+                desc={t('pricing_basic_desc')}
               />
             </div>
           </ScrollAnimation>
@@ -111,10 +109,11 @@ function PricingPlan() {
           >
             <div className={classes.item}>
               <PricingCard
-                title="Pro"
-                price={54}
-                featureList={feature.pro}
-                desc="Interdum et malesuada fames ac ante ipsum primis in faucibus. "
+                title={t('pricing_standard_title')}
+                price={14}
+                featureList={feature.standard}
+                desc={t('pricing_standard_desc')}
+                type="value"
               />
             </div>
           </ScrollAnimation>
@@ -127,10 +126,10 @@ function PricingPlan() {
           >
             <div className={classes.item}>
               <PricingCard
-                title="Enterprise"
-                price={99}
-                featureList={feature.enterprise}
-                desc=" Interdum et malesuada fames ac ante ipsum primis in faucibus. "
+                title={t('pricing_pro_title')}
+                price={22}
+                featureList={feature.pro}
+                desc={t('pricing_pro_desc')}
               />
             </div>
           </ScrollAnimation>
