@@ -12,7 +12,7 @@ function Register() {
     <Fragment>
       <Head>
         <title>
-          { brand.saas.name + ' - Register' }
+          { brand.cbuilder.name + ' - Register' }
         </title>
       </Head>
       <div>

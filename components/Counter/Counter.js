@@ -49,9 +49,9 @@ function Counter() {
               <div className={classes.counterItem}>
                 <div className={classes.text}>
                   <Typography variant="h3" className={text.title}>
-                    {countup(1, play)}
+                    {countup(40, play)}
                     &nbsp;
-                    {t('counter_month')}
+                    {t('counter_credits')}
                   </Typography>
                   <Typography component="p" className={text.subtitle}>
                     <CalendarMonthIcon />
@@ -65,7 +65,7 @@ function Counter() {
                 <div className={classes.text}>
                   <Typography variant="h3" className={text.title}>
                     +
-                    {countup(20, play)}
+                    {countup(10, play)}
                     K
                   </Typography>
                   <Typography component="p" className={text.subtitle}>

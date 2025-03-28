@@ -20,6 +20,7 @@ import Faq from 'components/Faq';
 import NewsEvent from 'components/NewsEvent';
 import PageNav from 'components/PageNav';
 import Notification from 'components/Notification';
+import { t } from 'i18next';
 
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles({ uniqId: 'home' })(theme => ({
@@ -69,11 +70,12 @@ function Landing(props) {
     <Fragment>
       <Head>
         <title>
-          { brand.saas.name + ' - Home Page' }
+          {brand.cbuilder.name + ' - Home Page'}
         </title>
       </Head>
       <CssBaseline />
       <MainContainer
+        footerDeco={true}
         onToggleDark={onToggleDark}
         onToggleDir={onToggleDir}
       >
@@ -100,9 +102,9 @@ function Landing(props) {
             <section id="faq" className={classes.spaceTopShort}>
               <Faq />
             </section>
-            <div className={cx(classes.spaceTopShort, classes.spaceBottomShort)}>
+            {/*  <div className={cx(classes.spaceTopShort, classes.spaceBottomShort)}>
               <NewsEvent />
-            </div>
+            </div> */}
           </main>
           {!isTablet && (
             <Fragment>

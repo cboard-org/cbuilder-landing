@@ -15,29 +15,6 @@ import illustration from 'public/images/saas/faq.png';
 import Title from '../Title';
 import useStyles from './faq-style';
 
-const faqData = [
-  {
-    q: 'Pellentesque ac bibendum tortor?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
-  },
-  {
-    q: 'In mi nulla, fringilla vestibulum?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
-  },
-  {
-    q: 'Quisque lacinia purus ut libero?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
-  },
-  {
-    q: 'Quisque ut metus sit amet augue?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
-  },
-  {
-    q: 'Pellentesque ac bibendum tortor?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
-  },
-];
-
 function Faq() {
   const { classes, cx } = useStyles();
   const { classes: text } = useText();
@@ -49,6 +26,29 @@ function Faq() {
   const handleChange = panel => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
+  const faqData = [
+    {
+      q: t('faq_question_01'),
+      a: t('faq_answer_01')
+    },
+    {
+      q: t('faq_question_02'),
+      a: t('faq_answer_02')
+    },
+    {
+      q: t('faq_question_03'),
+      a: t('faq_answer_03')
+    },
+    {
+      q: t('faq_question_04'),
+      a: t('faq_answer_04')
+    },
+    {
+      q: t('faq_question_05'),
+      a: t('faq_answer_05')
+    },
+  ];
+
   return (
     <div className={classes.root}>
       <Container fixed>

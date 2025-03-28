@@ -12,7 +12,7 @@ function Contact() {
     <Fragment>
       <Head>
         <title>
-          { brand.saas.name + ' - Contact' }
+          { brand.cbuilder.name + ' - Contact' }
         </title>
       </Head>
       <div>

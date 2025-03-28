@@ -1,13 +1,13 @@
 module.exports = {
-  saas: {
+  cbuilder: {
     name: 'Cbuilder',
-    desc: 'Luxiren Saas - React Single Landing Page Template',
-    prefix: 'luxiren',
-    footerText: 'Luxiren Theme 2021',
-    logoText: 'Luxiren Software',
-    projectName: 'Software',
-    url: 'luxireact.ux-maestro.com/saas',
-    img: '/static/images/saas-logo.png',
-    notifMsg: 'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.'
+    desc: 'Cboard AI Builder - AAC board builder powered by AI',
+    prefix: 'cbuilder',
+    footerText:  'Assistive Communication LLC 2024',
+    logoText: 'Cbuilder',
+    projectName: 'Cboard AI Builder',
+    url: 'cbuilder.io',
+    img: '/static/images/cbuilder-logo.png',
+    notifMsg: 'Build AAC boards with the power of AI'
   }
 };

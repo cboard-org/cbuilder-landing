@@ -78,7 +78,7 @@ function Contact() {
           <Link href={routeLink.saas.home}>
             <img src={logo} alt="logo" />
             <Typography component="span" className={text.title}>
-              {brand.saas.projectName}
+              {brand.cbuilder.projectName}
             </Typography>
           </Link>
         </div>

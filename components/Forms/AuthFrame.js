@@ -31,7 +31,7 @@ function AuthFrame(props) {
           <Link href={routerLink.saas.home}>
             <img src={logo} alt="logo" />
             <Typography component="p" className={text.subtitle2}>
-              {brand.saas.projectName}
+              {brand.cbuilder.projectName}
             </Typography>
           </Link>
         </div>
@@ -64,7 +64,7 @@ function AuthFrame(props) {
                     <div className={classes.logo}>
                       <img src={logo} alt="logo" />
                       <Typography className={text.subtitle2}>
-                        {brand.saas.projectName}
+                        {brand.cbuilder.projectName}
                       </Typography>
                     </div>
                     <Typography gutterBottom variant="h4" className={text.title2}>

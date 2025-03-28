@@ -9,7 +9,7 @@ const HeadComponent = () => (
     {/* Use minimum-scale=1 to enable GPU rasterization */}
     <meta
       name="description"
-      content={brand.saas.desc}
+      content={brand.cbuilder.desc}
     />
     {/* Favicon */}
     <link rel="icon" href="/favicons/favicon.ico" />
@@ -45,16 +45,16 @@ const HeadComponent = () => (
     <meta property="twitter:creator" content="luxi" />
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:image:src" content="/images/saas-logo.png" />
-    <meta property="og:url" content={brand.saas.url} />
-    <meta property="og:title" content={brand.saas.desc} />
+    <meta property="og:url" content={brand.cbuilder.url} />
+    <meta property="og:title" content={brand.cbuilder.desc} />
     <meta
       property="og:description"
-      content={brand.saas.desc}
+      content={brand.cbuilder.desc}
     />
-    <meta name="twitter:site" content={brand.saas.url} />
+    <meta name="twitter:site" content={brand.cbuilder.url} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content={brand.saas.img} />
-    <meta property="og:image" content={brand.saas.img} />
+    <meta name="twitter:image" content={brand.cbuilder.img} />
+    <meta property="og:image" content={brand.cbuilder.img} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
   </Head>

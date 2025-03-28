@@ -44,11 +44,12 @@ function BlankPage(props) {
     <Fragment>
       <Head>
         <title>
-          { brand.saas.name + ' - Blank Page' }
+          { brand.cbuilder.name + ' - Blank Page' }
         </title>
       </Head>
       <CssBaseline />
       <MainContainer
+      
         onToggleDark={onToggleDark}
         onToggleDir={onToggleDir}
         invert

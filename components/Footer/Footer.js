@@ -11,44 +11,58 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import IconButton from '@mui/material/IconButton';
-import logo from 'public/images/saas-logo.svg';
+import logo from 'public/images/cbuilder-logo-nowords.gif';
 import brand from 'public/text/brand';
 import useStyles from './footer-style';
 import SelectLang from '../LangSwitch/Select';
+import { useTranslation } from 'next-i18next';
 
 function Copyright() {
   return (
     <Typography variant="body2" display="block" align="center" color="textSecondary">
       &copy;&nbsp;
-      {brand.saas.footerText}
+      {brand.cbuilder.footerText}
     </Typography>
   );
 }
-
-const footers = [
-  {
-    title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Locations'],
-    link: ['#team', '#history', '#contact-us', '#locations'],
-  },
-  {
-    title: 'Resources',
-    description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
-    link: ['#resource', '#resource-name', '#another-resource', '#final-resource'],
-  },
-  {
-    title: 'Legal',
-    description: ['Privacy policy', 'Terms of use', 'Terms Condition'],
-    link: ['#privacy-policy', '#terms-of-use'],
-  },
-];
 
 function Footer(props) {
   const { classes, cx } = useStyles();
   const { invert, toggleDir } = props;
   const theme = useTheme();
+  const { t } = useTranslation('common');
   const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const baseUrl = 'https://cboard.io';
+  const footers = [
+    {
+      title: t('footer_company'),
+      description: [t('title_team'), t('title_history'), t('title_contact'), t('title_locations')],
+      link: [
+        baseUrl + '/team',
+        baseUrl + '/history',
+        baseUrl + '/contact',
+        baseUrl + '/locations'
+      ],
+    },
+    {
+      title: t('footer_resources'),
+      description: [t('title_help'), t('title_faq'), t('title_blog')],
+      link: [
+        '#resource',
+        '#resource-name',
+        baseUrl + '/blog'
+      ],
+    },
+    {
+      title: t('footer_legal'),
+      description: [t('title_privacy'), t('title_terms')],
+      link: [
+        baseUrl + '/privacy',
+        baseUrl + '/terms-of-use'],
+    },
+  ];
+
 
   return (
     <Container
@@ -61,7 +75,7 @@ function Footer(props) {
           <div className={classes.logo}>
             <img src={logo} alt="logo" />
             <Typography variant="h6" color="textPrimary">
-              {brand.saas.projectName}
+              {brand.cbuilder.projectName}
             </Typography>
           </div>
           <Copyright />
@@ -151,7 +165,7 @@ Footer.propTypes = {
 
 Footer.defaultProps = {
   invert: false,
-  toggleDir: () => {},
+  toggleDir: () => { },
 };
 
 export default Footer;

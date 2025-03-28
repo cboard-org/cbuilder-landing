@@ -12,7 +12,7 @@ function Login() {
     <Fragment>
       <Head>
         <title>
-          { brand.saas.name + ' - Login' }
+          { brand.cbuilder.name + ' - Login' }
         </title>
       </Head>
       <div>

@@ -28,11 +28,14 @@ function ErrorPage(props) {
       <Fragment>
         <Head>
           <title>
-            { brand.saas.name + ' - ' + errorCode }
+            {brand.cbuilder.name + ' - ' + errorCode}
           </title>
         </Head>
         <div className={classes.dedicatedPage}>
-          <MainContainer onToggleDark={onToggleDark} onToggleDir={onToggleDir}>
+          <MainContainer
+            footerDeco={true}
+            onToggleDark={onToggleDark}
+            onToggleDir={onToggleDir}>
             <Error errorCode={errorCode} text={t('404')} />
           </MainContainer>
         </div>
