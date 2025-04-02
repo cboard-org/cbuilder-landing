@@ -168,9 +168,9 @@ function Feature() {
                     textColor="primary"
                     centered
                   >
-                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Pellentesque" />
-                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Donec" />
-                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Vestibulum" />
+                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Imagine" />
+                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Build" />
+                    <Tab classes={{ root: classes.tabLabel, selected: classes.selected }} label="Export" />
                   </Tabs>
                   <div className={classes.tabContent}>
                     {value === 0 && (

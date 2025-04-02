@@ -75,7 +75,7 @@ function Header(props) {
 
   return (
     <Fragment>
-      { isTablet && (<MobileMenu open={openDrawer} toggleDrawer={handleOpenDrawer} />) }
+      {isTablet && (<MobileMenu open={openDrawer} toggleDrawer={handleOpenDrawer} />)}
       <AppBar
         component="header"
         position="relative"
@@ -90,7 +90,7 @@ function Header(props) {
         <Container fixed={isDesktop}>
           <div className={classes.headerContent}>
             <nav className={classes.navMenu}>
-              { isTablet && (
+              {isTablet && (
                 <IconButton
                   onClick={handleOpenDrawer}
                   className={cx('hamburger hamburger--spin', classes.mobileMenu, openDrawer && 'is-active')}
@@ -142,8 +142,13 @@ function Header(props) {
             <nav className={classes.navMenu}>
               {!isMobile && (
                 <Fragment>
-                  <Button component={Link} href={routeLink.saas.register} variant="contained" color="secondary" className={classes.button}>
-                  {t('getstarted')}
+                  <Button
+                    component={Link}
+                    href="https://cbuilder.cboard.io/"
+                    variant="contained"
+                    color="secondary"
+                    className={classes.button}>
+                    {t('getstarted')}
                   </Button>
                 </Fragment>
               )}

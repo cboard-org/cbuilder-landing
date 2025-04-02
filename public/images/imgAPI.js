@@ -1,13 +1,14 @@
 const imgAPI = {
   avatar: [
-    '/images/avatars/pp_girl.svg',
-    '/images/avatars/pp_girl2.svg',
-    '/images/avatars/pp_girl3.svg',
-    '/images/avatars/pp_girl4.svg',
-    '/images/avatars/pp_girl5.svg',
-    '/images/avatars/pp_girl.svg',
-    '/images/avatars/pp_boy.svg',
-    '/images/avatars/pp_boy2.svg',
+    '/images/avatars/dr-elena-ruiz.png',
+    '/images/avatars/marc-jensen.png',
+    '/images/avatars/lisa-chen.png',
+    '/images/avatars/carlos-alvarez.png',
+    '/images/avatars/angela-thompson.png',
+    '/images/avatars/priya-menon.png',
+    '/images/avatars/jordan-lee.png',
+    '/images/avatars/nadia-garcia.png',
+    '/images/avatars/benjamin-walker.png',
     '/images/avatars/pp_boy3.svg',
     '/images/avatars/pp_boy4.svg',
     '/images/avatars/pp_boy5.svg'

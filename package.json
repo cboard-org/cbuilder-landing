@@ -1,17 +1,17 @@
 {
-	"name": "saas-theme",
-	"version": "2.4.0",
-	"description": "Luxi ReactJs Saas Theme",
+	"name": "cbuilder-landing-page",
+	"version": "1.0.0",
+	"description": "Landing Page for the Cboard AI Builder",
 	"keywords": [
-		"software",
-		"service",
-		"technology",
-		"bussiness",
-		"corporate",
-		"modern"
+		"cboard",
+		"landing",
+		"AAC",
+		"AI",
+		"Cbuilder",
+		"AI Builder"
 	],
-	"author": "Luxi Theme",
-	"license": "Envato",
+	"author": "Martin Bedouret",
+	"license": "GPL-3.0-only",
 	"main": "index.js",
 	"private": true,
 	"scripts": {
