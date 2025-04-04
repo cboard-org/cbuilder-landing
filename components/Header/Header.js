@@ -10,7 +10,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { useTranslation } from 'next-i18next';
 import logo from 'public/images/cbuilder-logo.gif';
-import brand from 'public/text/brand';
 import routeLink from 'public/text/link';
 import Link from '../Link';
 import Settings from './Settings';
@@ -132,7 +131,7 @@ function Header(props) {
                     </li>
                   ))}
                   <li>
-                    <Button component={Link} href={routeLink.saas.contact}>
+                    <Button component={Link} href="https://www.cboard.io/en/contact/">
                       {t('header_contact')}
                     </Button>
                   </li>

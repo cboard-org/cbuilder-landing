@@ -83,7 +83,7 @@ const footerStyles = makeStyles({ uniqId: 'footer' })((theme, _params, classes) 
     display: 'flex',
     justifyContent: 'center',
     marginBottom: theme.spacing(4),
-    '& button': {
+    '& a': {
       margin: theme.spacing(),
       color: theme.palette.primary.dark,
       background: theme.palette.primary.main,

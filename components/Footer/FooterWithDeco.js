@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import { useTranslation } from 'next-i18next';
 import { useText } from 'theme/common';
 import Footer from './Footer';
+import Link from '../Link';
 import useStyles from './footer-style';
 
 function FooterWithDeco(props) {
@@ -27,7 +28,12 @@ function FooterWithDeco(props) {
         <Typography variant="h4" className={text.title2}>
           {t('footer_waiting')}
         </Typography>
-        <Button variant="contained" color="secondary" size="large">
+        <Button
+          component={Link}
+          href="https://cbuilder.cboard.io/"
+          variant="contained"
+          color="secondary"
+          size="large">
           {t('getstarted')}
         </Button>
       </div>

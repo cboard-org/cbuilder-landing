@@ -138,17 +138,33 @@ function Footer(props) {
         </Grid>
         <Grid item xs={12} md={3}>
           <div className={classes.socmed}>
-            <IconButton aria-label="FB" className={classes.margin} size="small">
+            <IconButton
+              component={Link} href="https://www.facebook.com/cboardAAC"
+              aria-label="facebook"
+              className={classes.margin}
+              size="small">
               <i className="ion-logo-facebook" />
             </IconButton>
-            <IconButton aria-label="TW" className={classes.margin} size="small">
-              <i className="ion-logo-twitter" />
-            </IconButton>
-            <IconButton aria-label="IG" className={classes.margin} size="small">
+            <IconButton
+              component={Link} href="https://www.instagram.com/cboardapp/"
+              aria-label="instagram"
+              className={classes.margin}
+              size="small">
               <i className="ion-logo-instagram" />
             </IconButton>
-            <IconButton aria-label="LI" className={classes.margin} size="small">
+            <IconButton
+              component={Link} href="https://www.linkedin.com/company/cboard/"
+              aria-label="linkedin"
+              className={classes.margin}
+              size="small">
               <i className="ion-logo-linkedin" />
+            </IconButton>
+            <IconButton
+              component={Link} href="https://www.youtube.com/channel/UCIdXJsQko7DVK-yApMQyV_Q"
+              aria-label="youtube"
+              className={classes.margin}
+              size="small">
+              <i className="ion-logo-youtube" />
             </IconButton>
           </div>
           <SelectLang toggleDir={toggleDir} />
