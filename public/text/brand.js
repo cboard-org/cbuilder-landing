@@ -7,6 +7,7 @@ module.exports = {
     logoText: 'Cbuilder',
     projectName: 'Cboard AI Builder',
     url: 'cbuilder.io',
+    fullUrl: 'https://cbuilder.io',
     img: '/static/images/cbuilder-logo.png',
     notifMsg: 'Build AAC boards with the power of AI'
   }

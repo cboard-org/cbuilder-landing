@@ -1,78 +1,87 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Head from 'next/head';
-import { makeStyles } from 'tss-react/mui';
-import CssBaseline from '@mui/material/CssBaseline';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
+import Head from "next/head";
+import { makeStyles } from "tss-react/mui";
+import CssBaseline from "@mui/material/CssBaseline";
+import useMediaQuery from "@mui/material/useMediaQuery";
 // Use this below for Server Side Render/Translation (SSR)
 // import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 // Use this below for Static Site Generation (SSG)
-import { getStaticPaths, makeStaticProps } from 'lib/getStatic';
-import brand from 'public/text/brand';
-import MainContainer from 'components/MainContainer';
-import Banner from 'components/Banner';
-import CompanyLogo from 'components/CompanyLogo';
-import Counter from 'components/Counter';
-import Feature from 'components/Feature';
-import Testimonials from 'components/Testimonials';
-import PricingPlan from 'components/PricingPlan';
-import Faq from 'components/Faq';
-import NewsEvent from 'components/NewsEvent';
-import PageNav from 'components/PageNav';
-import Notification from 'components/Notification';
-import { t } from 'i18next';
+import { getStaticPaths, makeStaticProps } from "lib/getStatic";
+import brand from "public/text/brand";
+import MainContainer from "components/MainContainer";
+import Banner from "components/Banner";
+import CompanyLogo from "components/CompanyLogo";
+import Counter from "components/Counter";
+import Feature from "components/Feature";
+import Testimonials from "components/Testimonials";
+import PricingPlan from "components/PricingPlan";
+import Faq from "components/Faq";
+import NewsEvent from "components/NewsEvent";
+import PageNav from "components/PageNav";
+import Notification from "components/Notification";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
+import HTMLHead from "components/HTMLHead";
 
-const sectionMargin = margin => (margin * 20);
-const useStyles = makeStyles({ uniqId: 'home' })(theme => ({
+const sectionMargin = (margin) => margin * 20;
+const useStyles = makeStyles({ uniqId: "home" })((theme) => ({
   mainWrap: {
-    position: 'relative',
-    width: '100%',
-    overflow: 'hidden',
+    position: "relative",
+    width: "100%",
+    overflow: "hidden",
     background: theme.palette.background.paper,
   },
   spaceBottom: {
     marginBottom: theme.spacing(20),
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down("md")]: {
       marginBottom: sectionMargin(6),
-    }
+    },
   },
   spaceBottomTesti: {
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up("md")]: {
       marginBottom: theme.spacing(20),
-    }
+    },
   },
   spaceBottomShort: {
-    marginBottom: theme.spacing(10)
+    marginBottom: theme.spacing(10),
   },
   spaceTop: {
     marginTop: theme.spacing(20),
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down("md")]: {
       marginTop: sectionMargin(6),
-    }
+    },
   },
   spaceTopShort: {
-    marginTop: theme.spacing(10)
+    marginTop: theme.spacing(10),
   },
   containerWrap: {
     marginTop: -40,
-    '& > section': {
-      position: 'relative'
-    }
-  }
+    "& > section": {
+      position: "relative",
+    },
+  },
 }));
 
 function Landing(props) {
   const { classes, cx } = useStyles();
-  const { onToggleDark, onToggleDir } = props;
-  const isTablet = useMediaQuery(theme => theme.breakpoints.down('md'));
+  const { onToggleDark, onToggleDir, locale } = props;
+  const isTablet = useMediaQuery((theme) => theme.breakpoints.down("md"));
+  const { t } = useTranslation("common");
 
   return (
     <Fragment>
-      <Head>
-        <title>
-          {brand.cbuilder.name + ' - Home Page'}
-        </title>
-      </Head>
+      <HTMLHead
+        title={
+          brand.cbuilder.name +
+          " | " +
+          t("title_home") +
+          " - " +
+          t("title_slogan")
+        }
+        locale={locale}
+        page=""
+      />
       <CssBaseline />
       <MainContainer
         footerDeco={true}
@@ -127,7 +136,7 @@ Landing.propTypes = {
 // export const getStaticProps = async ({ locale }) => ({ props: { ...await serverSideTranslations(locale, ['common']) } });
 
 // Use this below for Static Site Generation (SSG)
-const getStaticProps = makeStaticProps(['common']);
+const getStaticProps = makeStaticProps(["common"]);
 export { getStaticPaths, getStaticProps };
 
 export default Landing;
